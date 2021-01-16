@@ -1,0 +1,37 @@
+{
+  "name": "roster-challenge",
+  "version": "1.0.0",
+  "description": "code test for rebel ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "installDep": "npm i && cd client && npm i",
+    "auditDep": "npm audit fix && cd client && npm audit fix"
+  },
+  "keywords": [
+    "roster"
+  ],
+  "dependencies": {
+    "axios": "0.21.0",
+    "body-parser": "^1.19.0",
+    "compression": "1.7.4",
+    "config": "^3.3.1",
+    "cors": "2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.4.0",
+    "helmet": "3.23.3",
+    "morgan": "1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "author": "haopeng jiang",
+  "license": "ISC"
+}
